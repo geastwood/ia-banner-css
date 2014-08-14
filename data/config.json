@@ -8,7 +8,7 @@
                 "border": {
                     "color": "#A3B13A"
                 },
-                "backgroud": {
+                "linear-gradient": {
                     "color1": "#a3b13a",
                     "color2": "#ffffff",
                     "start": 42,
@@ -24,7 +24,7 @@
             },
             "style": {
                 "background": {
-                    "color": "#efefef"
+                    "value": "#efefef"
                 }
             }
         },
@@ -34,7 +34,7 @@
             },
             "style": {
                 "background": {
-                    "color": "#ffffff"
+                    "value": "#ffffff"
                 }
             }
         }

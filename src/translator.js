@@ -1,7 +1,8 @@
 'use strict';
 var fs = require('fs');
+var util = require('./util');
 var baseUrl = __dirname;
-// translate the css strings
+
 var templateConfigs = null;
 
 var interpolate = function(template, config) {
@@ -20,16 +21,52 @@ var transSelector = function(data) { // TODO may need refactoring
     var parent = data.selector[0];
     return data.config.cssCls.replace(/^&/, parent);
 };
-var transStyle = function(data) {
-    /*
-    var border = templateConfigs.border;
 
-    console.log(interpolate(border.template, border.defaults));
-    */
+/**
+ * Here is an overview how data look like
+ * {
+ *   selector: [],
+ *   style: {
+ *      border: {
+ *          config: {},
+ *          template: '' | []
+ *      }
+ *   }
+ * }
+ *
+ * @param {Object} data Object defines one css block
+ */
+var transStyle = function(data) {
+    var rst = [];
+    for (var style in data.style) {
+        if (data.style.hasOwnProperty(style)) {
+            rst = rst.concat(buildStyle(style, data.style[style]));
+        }
+    }
+
+    console.log(rst);
+    return rst;
+};
+var buildStyle = function(name, data) {
+    var template, templateData, rst = [];
+
     if (templateConfigs === null) {
         load();
     }
 
+    template = templateConfigs[name].template;
+    // here merge the data with `defaults`
+    templateData = util.extend(templateConfigs[name].defaults, data);
+
+    if (typeof template === 'string') {
+        rst.push(interpolate(template, templateData));
+    } else { // handles multiple lines definition like gradient
+        template.forEach(function(line) {
+            rst.push(interpolate(line, templateData));
+        });
+    }
+
+    return rst;
 };
 
 /**
@@ -41,7 +78,6 @@ var translate = function(data) {
     var cssRules = [];
 
     data.map(function(item) {
-        console.log(transSelector(item));
         return {
             selector: transSelector(item),
             declearations: transStyle(item)

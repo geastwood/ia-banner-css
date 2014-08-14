@@ -5,12 +5,30 @@
             "type": "solid",
             "color": "#000000"
         },
-        "template": "{width}px {type} {color};"
+        "template": "border: {width}px {type} {color};"
     },
     "background": {
         "defaults": {
-
+            "value": "#000000"
         },
-        "template": ""
+        "template": "background-color: {value};"
+    },
+    "linear-gradient": {
+        "defaults": {
+            "color1": "#a3b13a",
+            "color2": "#ffffff",
+            "start": 42,
+            "end": "100"
+        },
+        "template": [
+            "background: {color1};",
+            "background: -moz-moz-linear-gradient(-45deg, {color1} {start}%, {color2} {end}%);",
+            "background: -webkit-gradient(linear, left top, right bottom, color-stop({start}%, {color1}), color-stop({end}%, {color2}));",
+            "background: -webkit-linear-gradient(-45deg, {color1} 42%, {color2} {end}%);",
+            "background: -o-linear-gradient(-45deg, {color1} 42%, {color2} {end}%);",
+            "background: -ms-linear-gradient(-45deg, {color1} 42%, {color2} {end}%);",
+            "background: linear-gradient(135deg, {color1} 42%, {color2} {end}%);",
+            "filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '{color1}', endColorstr = '{color2}', GradientType=0);"
+        ]
     }
 }
