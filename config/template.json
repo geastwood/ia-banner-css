@@ -1,0 +1,16 @@
+{
+    "border": {
+        "defaults": {
+            "width": 0,
+            "type": "solid",
+            "color": "#000000"
+        },
+        "template": "{width}px {type} {color};"
+    },
+    "background": {
+        "defaults": {
+
+        },
+        "template": ""
+    }
+}

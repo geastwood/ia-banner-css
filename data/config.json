@@ -1,0 +1,42 @@
+{
+    "main" : {
+        "div": {
+            "config": {
+                "cssCls": "&_div"
+            },
+            "style": {
+                "border": {
+                    "color": "#A3B13A"
+                },
+                "backgroud": {
+                    "color1": "#a3b13a",
+                    "color2": "#ffffff",
+                    "start": 42,
+                    "end": "100"
+                }
+            }
+        }
+    },
+    "product" : {
+        "container": {
+            "config": {
+                "cssCls": "&-container"
+            },
+            "style": {
+                "background": {
+                    "color": "#efefef"
+                }
+            }
+        },
+        "upper": {
+            "config": {
+                "cssCls": "&-upper"
+            },
+            "style": {
+                "background": {
+                    "color": "#ffffff"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,219 @@
+{
+    "main" : {
+        "config": {
+            "cssCls": "&_dev"
+        },
+        "style": {
+            "border": {
+                "color": "#A3B13A"
+            },
+            "backgroud": {
+                "color1": "#a3b13a",
+                "color2": "#ffffff",
+                "start": 42,
+                "end": "100"
+            }
+        }
+    },
+    "product" : {
+        "container": {
+            "config": {
+                "cssCls": "&-container"
+            },
+            "style": {
+                "background": {
+                    "color": "#efefef"
+                }
+            }
+        },
+        "upper": {
+            "config": {
+                "cssCls": "&-upper"
+            },
+            "style": {
+                "background": {
+                    "color": "#ffffff"
+                }
+            }
+        },
+        "image": {
+            "config": {
+                "cssCls": "&-image"
+            },
+            "style": {
+                "background": {
+                    "color": "#ffffff"
+                },
+                "color": {
+                    "value": "ffffff"
+                }
+            }
+        },
+        "image-box": {
+            "config": {
+                "cssCls": "&-image-box"
+            },
+            "style": {
+                "background": {
+                    "color": "#ffffff"
+                }
+            }
+        },
+        "image-overlay": {
+            "config": {
+                "cssCls": "&-image-overlay"
+            },
+            "style": {
+                "background": {
+                    "color": "#ffffff"
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "font-size": {
+                    "value": 11
+                }
+            }
+        },
+        "headline": {
+            "config": {
+                "cssCls": "&-headline"
+            },
+            "style": {
+                "font-weight": {
+                    "value": "bold"
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "font-size": {
+                    "value": 11
+                }
+            }
+        },
+        "description": {
+             "config": {
+                "cssCls": "&-description"
+            },
+            "style": {
+                "font-weight": {
+                    "value": "normal"
+                },
+                "color": {
+                    "value": "#333333"
+                },
+                "font-size": {
+                    "value": 11
+                }
+            }
+
+        },
+        "price-left": {
+            "config": {
+                "cssCls": "&-price-left"
+            },
+            "style": {
+                "font-weight": {
+                    "value": "bold"
+                },
+                "color": {
+                    "value": "#333333"
+                },
+                "font-size": {
+                    "value": 12
+                },
+                "text-decoration": {
+                    "value": "line-through"
+                }
+            }
+
+        },
+        "price-left-sub": {
+            "config": {
+                "cssCls": "&-price-left-sub"
+            },
+            "style": {
+                "font-weight": {
+                    "value": "normal"
+                },
+                "color": {
+                    "value": "#333333"
+                },
+                "font-size": {
+                    "value": 11
+                },
+                "text-decoration": {
+                    "value": "none"
+                }
+            }
+        },
+        "price-right": {
+            "config": {
+                "cssCls": "&-price-right"
+            },
+            "style": {
+                "font-weight": {
+                    "value": "bold"
+                },
+                "color": {
+                    "value": "#333333"
+                },
+                "font-size": {
+                    "value": 12
+                },
+                "text-decoration": {
+                    "value": "none"
+                },
+                "border-left": {
+                    "width": 1,
+                    "type": "solid",
+                    "color": "#333333"
+                }
+            }
+        },
+        "price-right-sub": {
+            "config": {
+                "cssCls": "&-price-right-sub"
+            },
+            "style": {
+                "font-weight": {
+                    "value": "normal"
+                },
+                "color": {
+                    "value": "#333333"
+                },
+                "font-size": {
+                    "value": 12
+                },
+                "text-decoration": {
+                    "value": "none"
+                }
+            }
+
+        }
+    },
+    "moreBtn": {
+        "RoundedCorners": true,
+        "DropShadow": true,
+        "Color": "#ffffff",
+        "Size": 12,
+        "FontWeight": "normal",
+        "BgColor1": "#A3B13A",
+        "BgColor2": "#666222",
+        "BgStart": "55",
+        "BgEnd": "100"
+    },
+    "productInfoBubbles": {
+        "Color": "#ffffff",
+        "Size": 9,
+        "FontWeight": "normal",
+        "BgColor": "#A3B13A"
+    },
+    "paging": {
+        "ArrowLeftColor": "#333333",
+        "ArrowRightColor": "#333333"
+    },
+    "logo": {
+        "Background": "#ffffff"
+    }
+}
