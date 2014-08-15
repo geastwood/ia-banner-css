@@ -51,12 +51,6 @@
         },
         "template": "font-size: {value}px;"
     },
-    "fei": {
-        "defaults": {
-            "value": "12"
-        },
-        "template": "font-size: {value}px;"
-    },
     "font-weight": {
         "defaults": {
             "value": "normal"
