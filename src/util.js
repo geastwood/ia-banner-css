@@ -9,6 +9,16 @@ var extend = function(target, source) {
     }
     return target;
 };
+
+/**
+ * Padding using space
+ */
+var pad = function(str, indent) {
+    /* jshint newcap: false */
+    var padding = (indent) ? Array(indent * 4).join(' ') : '';
+    return padding + str;
+};
 module.exports = {
-    extend: extend
+    extend: extend,
+    pad: pad
 };

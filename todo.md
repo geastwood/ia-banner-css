@@ -1,1 +1,2 @@
-- [] handle browser prefix
+- [x] handle browser prefix
+- [ ] add some tests

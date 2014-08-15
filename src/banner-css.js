@@ -5,11 +5,16 @@ var baseUrl = __dirname;
 var parser = require('./parser');
 var translator = require('./translator');
 var dataFilePath = baseUrl + '/../data/data.json';
+var css = require('./css.js');
 
 fs.readFile(dataFilePath, 'utf8', function(err, data) {
     if (err) {
         throw err;
     }
     var parseData = parser.parse(data);
-    var tranlatedData = translator.translate(parseData);
+    var translatedData = translator.translate(parseData);
+    var temp = css.build(translatedData, function(selector) {
+        return '.ia-[[PREFIX]].' + selector;
+    });
+    console.log(temp);
 });

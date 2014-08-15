@@ -94,11 +94,10 @@ var translate = function(data) {
     var cssRules = data.map(function(item) {
         return {
             selector: transSelector(item),
-            declearations: getDeclarationBlock(item)
+            declaration: getDeclarationBlock(item)
         };
     });
 
-    console.log(cssRules);
     return cssRules;
 };
 
