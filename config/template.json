@@ -7,6 +7,14 @@
         },
         "template": "border: {width}px {type} {color};"
     },
+    "border-left": {
+        "defaults": {
+            "width": 0,
+            "type": "solid",
+            "color": "#000000"
+        },
+        "template": "border: {width}px {type} {color};"
+    },
     "background": {
         "defaults": {
             "value": "#000000"
@@ -30,5 +38,35 @@
             "background: linear-gradient(135deg, {color1} 42%, {color2} {end}%);",
             "filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '{color1}', endColorstr = '{color2}', GradientType=0);"
         ]
+    },
+    "color": {
+        "defaults": {
+            "value": "#ffffff"
+        },
+        "template": "color: {value};"
+    },
+    "font-size": {
+        "defaults": {
+            "value": "12"
+        },
+        "template": "font-size: {value}px;"
+    },
+    "fei": {
+        "defaults": {
+            "value": "12"
+        },
+        "template": "font-size: {value}px;"
+    },
+    "font-weight": {
+        "defaults": {
+            "value": "normal"
+        },
+        "template": "font-weight: {value};"
+    },
+    "text-decoration": {
+        "defaults": {
+            "value": "none"
+        },
+        "template": "text-decoration: {value};"
     }
 }

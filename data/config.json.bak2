@@ -8,7 +8,7 @@
                 "border": {
                     "color": "#A3B13A"
                 },
-                "backgroud": {
+                "linear-gradient": {
                     "color1": "#a3b13a",
                     "color2": "#ffffff",
                     "start": 42,
@@ -24,7 +24,7 @@
             },
             "style": {
                 "background": {
-                    "color": "#efefef"
+                    "value": "#efefef"
                 }
             }
         },
@@ -34,161 +34,7 @@
             },
             "style": {
                 "background": {
-                    "color": "#ffffff"
-                }
-            }
-        },
-        "image": {
-            "config": {
-                "cssCls": "&-image"
-            },
-            "style": {
-                "background": {
-                    "color": "#ffffff"
-                },
-                "color": {
-                    "value": "ffffff"
-                }
-            }
-        },
-        "image-box": {
-            "config": {
-                "cssCls": "&-image-box"
-            },
-            "style": {
-                "background": {
-                    "color": "#ffffff"
-                }
-            }
-        },
-        "image-overlay": {
-            "config": {
-                "cssCls": "&-image-overlay"
-            },
-            "style": {
-                "background": {
-                    "color": "#ffffff"
-                },
-                "color": {
                     "value": "#ffffff"
-                },
-                "font-size": {
-                    "value": 11
-                }
-            }
-        },
-        "headline": {
-            "config": {
-                "cssCls": "&-headline"
-            },
-            "style": {
-                "font-weight": {
-                    "value": "bold"
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "font-size": {
-                    "value": 11
-                }
-            }
-        },
-        "description": {
-             "config": {
-                "cssCls": "&-description"
-            },
-            "style": {
-                "font-weight": {
-                    "value": "normal"
-                },
-                "color": {
-                    "value": "#333333"
-                },
-                "font-size": {
-                    "value": 11
-                }
-            }
-
-        },
-        "price-left": {
-            "config": {
-                "cssCls": "&-price-left"
-            },
-            "style": {
-                "font-weight": {
-                    "value": "bold"
-                },
-                "color": {
-                    "value": "#333333"
-                },
-                "font-size": {
-                    "value": 12
-                },
-                "text-decoration": {
-                    "value": "line-through"
-                }
-            }
-
-        },
-        "price-left-sub": {
-            "config": {
-                "cssCls": "&-price-left-sub"
-            },
-            "style": {
-                "font-weight": {
-                    "value": "normal"
-                },
-                "color": {
-                    "value": "#333333"
-                },
-                "font-size": {
-                    "value": 11
-                },
-                "text-decoration": {
-                    "value": "none"
-                }
-            }
-        },
-        "price-right": {
-            "config": {
-                "cssCls": "&-price-right"
-            },
-            "style": {
-                "font-weight": {
-                    "value": "bold"
-                },
-                "color": {
-                    "value": "#333333"
-                },
-                "font-size": {
-                    "value": 12
-                },
-                "text-decoration": {
-                    "value": "none"
-                },
-                "border-left": {
-                    "width": 1,
-                    "type": "solid",
-                    "color": "#333333"
-                }
-            }
-        },
-        "price-right-sub": {
-            "config": {
-                "cssCls": "&-price-right-sub"
-            },
-            "style": {
-                "font-weight": {
-                    "value": "normal"
-                },
-                "color": {
-                    "value": "#333333"
-                },
-                "font-size": {
-                    "value": 12
-                },
-                "text-decoration": {
-                    "value": "none"
                 }
             }
         }

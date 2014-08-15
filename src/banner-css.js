@@ -4,8 +4,9 @@ var baseUrl = __dirname;
 
 var parser = require('./parser');
 var translator = require('./translator');
+var dataFilePath = baseUrl + '/../data/data.json';
 
-fs.readFile(baseUrl + '/../data/config.json', 'utf8', function(err, data) {
+fs.readFile(dataFilePath, 'utf8', function(err, data) {
     if (err) {
         throw err;
     }

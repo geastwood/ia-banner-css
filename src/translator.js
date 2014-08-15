@@ -23,7 +23,7 @@ var transSelector = function(data) { // TODO may need refactoring
 };
 
 /**
- * Here is an overview how data look like
+ * Here is an overview how data looks like
  * {
  *   selector: [],
  *   style: {
@@ -35,18 +35,28 @@ var transSelector = function(data) { // TODO may need refactoring
  * }
  *
  * @param {Object} data Object defines one css block
+ * @return {Array} declaration block as array
  */
-var transStyle = function(data) {
-    var rst = [];
-    for (var style in data.style) {
-        if (data.style.hasOwnProperty(style)) {
-            rst = rst.concat(buildStyle(style, data.style[style]));
+var getDeclarationBlock = function(data) {
+    var rst = [], styles = data.style;
+
+    for (var style in styles) {
+        if (styles.hasOwnProperty(style)) {
+            rst = rst.concat(buildStyle(style, styles[style]));
         }
     }
 
-    console.log(rst);
     return rst;
 };
+
+/**
+ * build individual css line base on template config
+ * @param {String} name Name of the style to be built, e.g. border, background, linear-gradient
+ * @param {Object} data Object contains defaults and template for building individual style line
+ *
+ * @return {Array} result for individual style, in case of linear-gradient array.length > 1, otherwise array.length = 1
+ *                 the return array basically match the `template` property defined in `template.config' file
+ */
 var buildStyle = function(name, data) {
     var template, templateData, rst = [];
 
@@ -54,7 +64,13 @@ var buildStyle = function(name, data) {
         load();
     }
 
+    if (!templateConfigs[name]) {
+        throw "Error when loading template data: '" + name + "'\n" +
+            "Please check any style property defined with '" + name + "'";
+    }
+
     template = templateConfigs[name].template;
+
     // here merge the data with `defaults`
     templateData = util.extend(templateConfigs[name].defaults, data);
 
@@ -75,15 +91,14 @@ var buildStyle = function(name, data) {
  */
 var translate = function(data) {
 
-    var cssRules = [];
-
-    data.map(function(item) {
+    var cssRules = data.map(function(item) {
         return {
             selector: transSelector(item),
-            declearations: transStyle(item)
+            declearations: getDeclarationBlock(item)
         };
     });
 
+    console.log(cssRules);
     return cssRules;
 };
 

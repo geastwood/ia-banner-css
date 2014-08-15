@@ -1,17 +1,19 @@
 {
     "main" : {
-        "config": {
-            "cssCls": "&_dev"
-        },
-        "style": {
-            "border": {
-                "color": "#A3B13A"
+        "div": {
+            "config": {
+                "cssCls": "&_div"
             },
-            "backgroud": {
-                "color1": "#a3b13a",
-                "color2": "#ffffff",
-                "start": 42,
-                "end": "100"
+            "style": {
+                "border": {
+                    "color": "#A3B13A"
+                },
+                "linear-gradient": {
+                    "color1": "#a3b13a",
+                    "color2": "#ffffff",
+                    "start": 42,
+                    "end": "100"
+                }
             }
         }
     },
@@ -22,7 +24,7 @@
             },
             "style": {
                 "background": {
-                    "color": "#efefef"
+                    "value": "#efefef"
                 }
             }
         },
@@ -32,7 +34,7 @@
             },
             "style": {
                 "background": {
-                    "color": "#ffffff"
+                    "value": "#ffffff"
                 }
             }
         },
@@ -42,7 +44,7 @@
             },
             "style": {
                 "background": {
-                    "color": "#ffffff"
+                    "value": "#ffffff"
                 },
                 "color": {
                     "value": "ffffff"
@@ -55,7 +57,7 @@
             },
             "style": {
                 "background": {
-                    "color": "#ffffff"
+                    "value": "#ffffff"
                 }
             }
         },
@@ -65,7 +67,7 @@
             },
             "style": {
                 "background": {
-                    "color": "#ffffff"
+                    "value": "#ffffff"
                 },
                 "color": {
                     "value": "#ffffff"
@@ -191,29 +193,5 @@
             }
 
         }
-    },
-    "moreBtn": {
-        "RoundedCorners": true,
-        "DropShadow": true,
-        "Color": "#ffffff",
-        "Size": 12,
-        "FontWeight": "normal",
-        "BgColor1": "#A3B13A",
-        "BgColor2": "#666222",
-        "BgStart": "55",
-        "BgEnd": "100"
-    },
-    "productInfoBubbles": {
-        "Color": "#ffffff",
-        "Size": 9,
-        "FontWeight": "normal",
-        "BgColor": "#A3B13A"
-    },
-    "paging": {
-        "ArrowLeftColor": "#333333",
-        "ArrowRightColor": "#333333"
-    },
-    "logo": {
-        "Background": "#ffffff"
     }
 }
