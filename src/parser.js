@@ -29,7 +29,6 @@ var organize = function(data) {
 };
 var parse = function(source) {
     var data = JSON.parse(source);
-    //console.log(organize(data));
     return organize(data);
 };
 

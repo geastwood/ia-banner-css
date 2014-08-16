@@ -13,7 +13,15 @@
             "type": "solid",
             "color": "#000000"
         },
-        "template": "border: {width}px {type} {color};"
+        "template": "border-left: {width}px {type} {color};"
+    },
+    "border-right": {
+        "defaults": {
+            "width": 0,
+            "type": "solid",
+            "color": "#000000"
+        },
+        "template": "border-right: {width}px {type} {color};"
     },
     "background": {
         "defaults": {
@@ -62,5 +70,29 @@
             "value": "none"
         },
         "template": "text-decoration: {value};"
+    },
+    "border-radius": {
+        "defaults": {
+            "value": 0
+        },
+        "template": [
+            "-moz-border-radius: {value}px;",
+            "-webkit-border-radius: {value}px;",
+            "-khtml-border-radius: {value}px;",
+            "border-radius: {value}px;"
+        ]
+    },
+    "box-shadow": {
+        "defaults": {
+            "x": 0,
+            "y": 0,
+            "value": 0,
+            "color": "#ffffff"
+        },
+        "template": [
+            "-moz-box-shadow: 0 0 {value}px {color};",
+            "-webkit-box-shadow: 0 0 {value}px {color};",
+            "box-shadow: 0 0 {value}px {color};"
+        ]
     }
 }

@@ -191,7 +191,96 @@
                     "value": "none"
                 }
             }
-
+        }
+    },
+    "more": {
+        "btn": {
+            "config": {
+                "cssCls": "&_btn"
+            },
+            "style": {
+                "linear-gradient": {
+                    "color1": "#A3B13A",
+                    "color2": "#666222",
+                    "start": 55,
+                    "end": 100
+                },
+                "font-size": {
+                    "value": 12
+                },
+                "font-weight": {
+                    "value": "normal"
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "border-radius": {
+                    "value": 2
+                },
+                "box-shadow": {
+                    "value": 5,
+                    "color": "#888888"
+                }
+            }
+        }
+    },
+    "prod": {
+        "info-bubbles": {
+            "config": {
+                "cssCls": "&-info-bubbles"
+            },
+            "style": {
+                "background": {
+                    "value": "#A3B13A"
+                },
+                "font-weight": {
+                    "value": "normal"
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "font-size": {
+                    "value": 9
+                }
+            }
+        }
+    },
+    "paging": {
+        "arrow-left": {
+            "config": {
+                "cssCls": "&-arrow-left"
+            },
+            "style": {
+                "border-left": {
+                    "width": 12,
+                    "type": "solid",
+                    "color": "#333333"
+                }
+            }
+        },
+        "arrow-right": {
+            "config": {
+                "cssCls": "&-arrow-right"
+            },
+            "style": {
+                "border-right": {
+                    "width": 12,
+                    "type": "solid",
+                    "color": "#333333"
+                }
+            }
+        }
+    },
+    "bn": {
+        "logo": {
+            "config": {
+                "cssCls": "&-logo"
+            },
+            "style": {
+                "background": {
+                    "value": "#ffffff"
+                }
+            }
         }
     }
 }
