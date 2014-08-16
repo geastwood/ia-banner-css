@@ -13,8 +13,8 @@ fs.readFile(dataFilePath, 'utf8', function(err, data) {
     }
     var parseData = parser.parse(data);
     var translatedData = translator.translate(parseData);
-    var temp = css.build(translatedData, function(selector) {
+    var cssData = css.build(translatedData, function(selector) {
         return '.ia-[[PREFIX]].' + selector;
     });
-    console.log(temp);
+    css.write('banner.css', cssData, {});
 });

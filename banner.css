@@ -1,0 +1,64 @@
+.ia-[[PREFIX]].main_div {
+   border: 0px solid #A3B13A;
+   background: #a3b13a;
+   background: -moz-moz-linear-gradient(-45deg, #a3b13a 42%, #ffffff 100%);
+   background: -webkit-gradient(linear, left top, right bottom, color-stop(42%, #a3b13a), color-stop(100%, #ffffff));
+   background: -webkit-linear-gradient(-45deg, #a3b13a 42%, #ffffff 100%);
+   background: -o-linear-gradient(-45deg, #a3b13a 42%, #ffffff 100%);
+   background: -ms-linear-gradient(-45deg, #a3b13a 42%, #ffffff 100%);
+   background: linear-gradient(135deg, #a3b13a 42%, #ffffff 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#a3b13a', endColorstr = '#ffffff', GradientType=0);
+}
+.ia-[[PREFIX]].product-container {
+   background-color: #efefef;
+}
+.ia-[[PREFIX]].product-upper {
+   background-color: #ffffff;
+}
+.ia-[[PREFIX]].product-image {
+   background-color: #ffffff;
+   color: ffffff;
+}
+.ia-[[PREFIX]].product-image-box {
+   background-color: #ffffff;
+}
+.ia-[[PREFIX]].product-image-overlay {
+   background-color: #ffffff;
+   color: #ffffff;
+   font-size: 11px;
+}
+.ia-[[PREFIX]].product-headline {
+   font-weight: bold;
+   color: #ffffff;
+   font-size: 11px;
+}
+.ia-[[PREFIX]].product-description {
+   font-weight: normal;
+   color: #333333;
+   font-size: 11px;
+}
+.ia-[[PREFIX]].product-price-left {
+   font-weight: bold;
+   color: #333333;
+   font-size: 12px;
+   text-decoration: line-through;
+}
+.ia-[[PREFIX]].product-price-left-sub {
+   font-weight: normal;
+   color: #333333;
+   font-size: 11px;
+   text-decoration: none;
+}
+.ia-[[PREFIX]].product-price-right {
+   font-weight: bold;
+   color: #333333;
+   font-size: 12px;
+   text-decoration: none;
+   border: 1px solid #333333;
+}
+.ia-[[PREFIX]].product-price-right-sub {
+   font-weight: normal;
+   color: #333333;
+   font-size: 12px;
+   text-decoration: none;
+}
