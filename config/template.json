@@ -34,7 +34,7 @@
             "color1": "#a3b13a",
             "color2": "#ffffff",
             "start": 42,
-            "end": "100"
+            "end": 100
         },
         "template": [
             "background: {color1};",
@@ -55,7 +55,7 @@
     },
     "font-size": {
         "defaults": {
-            "value": "12"
+            "value": 12
         },
         "template": "font-size: {value}px;"
     },
