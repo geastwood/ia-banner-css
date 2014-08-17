@@ -1,2 +1,5 @@
 - [x] handle browser prefix
+- [x] add recursive support
 - [ ] add some tests
+- [ ] improve interpolation
+- [ ] refactor

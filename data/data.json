@@ -1,5 +1,11 @@
 {
     "main" : {
+        "config": {},
+        "style": {
+            "border": {
+                "color": "#cccccc"
+            }
+        },
         "div": {
             "config": {
                 "cssCls": "&_div"
@@ -13,6 +19,16 @@
                     "color2": "#ffffff",
                     "start": 42,
                     "end": 100
+                }
+            },
+            "test": {
+                "config": {
+                    "cssCls": "&_test"
+                },
+                "style": {
+                    "background": {
+                        "value": "#efefef"
+                    }
                 }
             }
         }

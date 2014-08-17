@@ -18,7 +18,15 @@ var pad = function(str, indent) {
     var padding = (indent) ? Array(indent * 4).join(' ') : '';
     return padding + str;
 };
+
+var interpolate = function(template, config) {
+    return template.replace(/{([\w]+)}/gm, function(a, b) {
+        return config[b];
+    });
+};
+
 module.exports = {
     extend: extend,
-    pad: pad
+    pad: pad,
+    interpolate: interpolate
 };

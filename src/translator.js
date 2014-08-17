@@ -2,24 +2,17 @@
 var fs = require('fs');
 var util = require('./util');
 var baseUrl = __dirname;
-
 var templateConfigs = null;
 
-var interpolate = function(template, config) {
-    return template.replace(/{([\w]+)}/gm, function(a, b) {
-        return config[b];
-    });
-};
-
-// TODO may come from a different place
 var load = function() {
+    // TODO may come from a different place
     var template = JSON.parse(fs.readFileSync(baseUrl + '/../config/template.json', 'utf8'));
     templateConfigs = template;
 };
 
 var transSelector = function(data) { // TODO may need refactoring
     var parent = data.selector[0];
-    return data.config.cssCls.replace(/^&/, parent);
+    return (data.config.cssCls||'&').replace(/^&/, parent);
 };
 
 /**
@@ -51,6 +44,7 @@ var getDeclarationBlock = function(data) {
 
 /**
  * build individual css line base on template config
+ *
  * @param {String} name Name of the style to be built, e.g. border, background, linear-gradient
  * @param {Object} data Object contains defaults and template for building individual style line
  *
@@ -75,10 +69,10 @@ var buildStyle = function(name, data) {
     templateData = util.extend(templateConfigs[name].defaults, data);
 
     if (typeof template === 'string') {
-        rst.push(interpolate(template, templateData));
+        rst.push(util.interpolate(template, templateData));
     } else { // handles multiple lines definition like gradient
         template.forEach(function(line) {
-            rst.push(interpolate(line, templateData));
+            rst.push(util.interpolate(line, templateData));
         });
     }
 

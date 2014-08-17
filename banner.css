@@ -1,3 +1,6 @@
+.ia-[[IAPREFIX]]-main {
+   border: 0px solid #cccccc;
+}
 .ia-[[IAPREFIX]]-main_div {
    border: 0px solid #A3B13A;
    background: #a3b13a;
@@ -8,6 +11,9 @@
    background: -ms-linear-gradient(-45deg, #a3b13a 42%, #ffffff 100%);
    background: linear-gradient(135deg, #a3b13a 42%, #ffffff 100%);
    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#a3b13a', endColorstr = '#ffffff', GradientType=0);
+}
+.ia-[[IAPREFIX]]-main_test {
+   background-color: #efefef;
 }
 .ia-[[IAPREFIX]]-product-container {
    background-color: #efefef;
