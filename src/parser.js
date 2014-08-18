@@ -23,21 +23,24 @@ var organize = function(json) {
     var top, rst = [];
     function collect(name, data, parentName) {
 
+        var parentSelector;
         var keys = Object.keys(data);
+
+        // any property that is not in `['config', 'style']` is a `selector`
         var selectorKeys = keys.filter(function(prop) {
             return ['config', 'style'].indexOf(prop) === -1;
         });
 
-        var parentSelector;
-
+        // if there is a parent, push the `name of current node` to the end of `selector` array
         if (parentName) {
             parentName.push(name);
             parentSelector = parentName;
-        } else {
+        } else { // empty `parentName` means this is the root element
             parentSelector = [name];
         }
 
-        if (keys.indexOf('config') >= 0 && keys.indexOf('style') >= 0) {
+        // if there is any `style` data, push it to the `rst` array
+        if (keys.indexOf('style') >= 0) {
             rst.push({
                 selector: parentSelector,
                 config: data.config || {},
@@ -45,6 +48,7 @@ var organize = function(json) {
             });
         }
 
+        // recursive call the children element and to collect their selector
         selectorKeys.forEach(function(childName) {
             collect(childName, data[childName], parentSelector.slice());
         });

@@ -2,4 +2,4 @@
 - [x] add recursive support
 - [ ] add some tests
 - [x] improve interpolation
-- [ ] refactor
+- [x] refactor
