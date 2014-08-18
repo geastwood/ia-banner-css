@@ -23,7 +23,7 @@
             },
             "test": {
                 "config": {
-                    "cssCls": "&_test"
+                    "cssCls": "{0}_{1}_test"
                 },
                 "style": {
                     "background": {

@@ -10,9 +10,10 @@ var load = function() {
     templateConfigs = template;
 };
 
-var transSelector = function(data) { // TODO may need refactoring
-    var parent = data.selector[0];
-    return (data.config.cssCls||'&').replace(/^&/, parent);
+var transSelector = function(data) {
+    var cssCls = data.config.cssCls || '{0}';
+    cssCls = cssCls.replace('&', '{0}');
+    return util.interpolate(cssCls, data.selector);
 };
 
 /**
@@ -81,6 +82,8 @@ var buildStyle = function(name, data) {
 
 /**
  * receive output from parser
+ *
+ * @param {Object} name The data object
  * @return {Array} raw data for css builder to build
  */
 var translate = function(data) {
@@ -98,3 +101,4 @@ var translate = function(data) {
 module.exports = {
     translate: translate
 };
+
